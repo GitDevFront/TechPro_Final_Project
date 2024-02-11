@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--This is the name of my app.-->
+    <title>To-Do App</title>
+</head>
+<body>
+    <!--I created my search box using a navbar in Bootstrap. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+            <li class="nav-item all">
+              <a class="nav-link all-toggle" href="#" id="navbarall" role="button" data-toggle="all" aria-haspopup="true" aria-expanded="false">
+                All
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarAll">
+                
+              </div>
+            </li>
+            
+        </div>
+      </nav>
+      <!--This is the container for the main function of the app. -->
+    <div class="container">
+        <h1>To-Do</h1>
+        <ul id="taskList"></ul>
+        <div>
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <button onclick="addTask()">New</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
